@@ -3,6 +3,7 @@
 # Constants
 META_PATH="META-INF"
 EDIFY_PATH="$META_PATH/com/google/android"
+SETUP_SCRIPT="zippo-setup.sh"
 
 SCRIPT_DEST="$EDIFY_PATH/updater-script"
 INCLUDE_FILES="$META_PATH LICENSE README.md"
@@ -16,10 +17,6 @@ function generate-zip {
   zip -r "$ZIP_NAME" $FILES
 }
 
-function copy-script {
-  cp -f "$1/updater-script" "$SCRIPT_DEST"
-}
-
 function tidy-up {
   rm "$SCRIPT_DEST"
 }
@@ -27,13 +24,20 @@ function tidy-up {
 
 # Main
 for d in */ ; do
+  # Skip META-INF path
   [[ "$d" == "$META_PATH/" ]] && continue
 
-  FLASHABLE_ZIP="${d%/}"
+  TARGET="${d%/}"
+  echo "~ Forging ${TARGET}.zip..."
 
-  echo "~ Forging ${FLASHABLE_ZIP}.zip..."
-  copy-script "$FLASHABLE_ZIP"
-  generate-zip "$FLASHABLE_ZIP"
+  # Run specific ZIP setup script
+  [[ -x "$TARGET/$SETUP_SCRIPT" ]] && ( cd "$TARGET/" && "./$SETUP_SCRIPT" )
+
+  # Place updater-script
+  cp -f "$TARGET/updater-script" "$SCRIPT_DEST"
+
+  # Generate final ZIP
+  generate-zip "$TARGET"
 done
 
 tidy-up
