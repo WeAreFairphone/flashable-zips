@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Constants
+META_PATH="META-INF"
+EDIFY_PATH="$META_PATH/com/google/android"
+
+SCRIPT_DEST="$EDIFY_PATH/updater-script"
+INCLUDE_FILES="$META_PATH LICENSE README.md"
+
+
+# Functions
+function generate-zip {
+  ZIP_NAME="${1%.*}.zip"
+  FILES="$INCLUDE_FILES $@"
+
+  zip -r "$ZIP_NAME" $FILES
+}
+
+function copy-script {
+  cp -f "$1/updater-script" "$SCRIPT_DEST"
+}
+
+function tidy-up {
+  rm "$SCRIPT_DEST"
+}
+
+
+# Main
+for d in */ ; do
+  [[ "$d" == "$META_PATH/" ]] && continue
+
+  FLASHABLE_ZIP="${d%/}"
+
+  echo "~ Forging ${FLASHABLE_ZIP}.zip..."
+  copy-script "$FLASHABLE_ZIP"
+  generate-zip "$FLASHABLE_ZIP"
+done
+
+tidy-up
