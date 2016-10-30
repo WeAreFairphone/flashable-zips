@@ -1,0 +1,16 @@
+show_progress(1.000000, 0);
+run_program("/sbin/busybox", "mount", "/system");
+
+run_program("/sbin/busybox", "mv", "-f", "/system/fonts/NotoColorEmoji.ttf", "/system/fonts/NotoColorEmoji.ttf.old");
+ui_print("Old emoji font has been saved to /system/fonts/NotoColorEmoji.ttf.old");
+set_progress(0.100000);
+
+package_extract_file("emojione/emojione-android.ttf", "/system/fonts/NotoColorEmoji.ttf");
+#set_perm(0, 0, 0644, "/system/fonts/NotoColorEmoji.ttf");
+run_program("/sbin/busybox", "chmod", 644, "/system/fonts/NotoColorEmoji.ttf");
+set_progress(0.900000);
+
+run_program("/sbin/busybox", "umount", "/system");
+set_progress(1.000000);
+
+ui_print("Enjoy EmojiOne! Ü");
