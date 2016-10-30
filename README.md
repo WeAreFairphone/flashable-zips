@@ -27,3 +27,9 @@ Alternatively, copy the resulting ZIPs to your device storage, restart your devi
 
 Clean way to unroot Fairphone 2 [Open OS](http://code.fairphone.com/projects/fp-osos/index.html#id2), that came prerooted and with TWRP. Removes `bin/su` and `xbin/su` binaries from `/system`.
 Needed to pass SafetyNet requirements for some apps. [Guide](https://forum.fairphone.com/t/pencil2-how-to-install-any-app-on-fp-open-os-for-beginners-and-experts/22516) and [motivation behind](https://forum.fairphone.com/t/how-to-be-able-to-install-and-use-any-app-on-fp-open-os-experimental/22327/34?u=roboe).
+
+
+### EmojiOne Installer
+
+Replace Android's default [emoji set](https://www.google.com/get/noto/help/emoji/) with [EmojiOne](http://emojione.com/). EmojiOne is an [open and free](https://github.com/Ranks/emojione/blob/master/LICENSE.md) emoji set that does not visually suck.  
+The flashable ZIP saves a copy of the previous installed emoji at `/system/fonts/NotoColorEmoji.ttf.old`.
