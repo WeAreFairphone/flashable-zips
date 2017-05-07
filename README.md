@@ -1,3 +1,4 @@
+
 Flashable ZIPs
 ---
 
@@ -29,7 +30,8 @@ Clean way to unroot Fairphone 2 [Open OS](http://code.fairphone.com/projects/fp-
 Needed to pass SafetyNet requirements for some apps. [Guide](https://forum.fairphone.com/t/pencil2-how-to-install-any-app-on-fp-open-os-for-beginners-and-experts/22516) and [motivation behind](https://forum.fairphone.com/t/how-to-be-able-to-install-and-use-any-app-on-fp-open-os-experimental/22327/34?u=roboe).
 
 
-### EmojiOne Installer
+### EmojiOne v2 Installer
 
-Replace Android's default [emoji set](https://www.google.com/get/noto/help/emoji/) with [EmojiOne](http://emojione.com/). EmojiOne is an [open and free](https://github.com/Ranks/emojione/blob/master/LICENSE.md) emoji set that does not visually suck.  
-The flashable ZIP saves a copy of the previous installed emoji at `/system/fonts/NotoColorEmoji.ttf.old`.
+Replace Android's default [emoji set](https://www.google.com/get/noto/help/emoji/) with [EmojiOne v2](https://www.emojione.com/emoji/v2). EmojiOne v2 is an emoji set more comprehensible than Android's one [before Marshmallow](http://blog.emojipedia.org/android-6-0-1-emoji-changelog/).  
+EmojiOne v2 is the last [open and free](https://github.com/Ranks/emojione/blob/2.2.7/LICENSE.md) version of EmojiOne. EmojiOne v3 and later are **not open** to the public anymore.  
+The flashable ZIP saves a copy of the previous installed emoji on your device at `/system/fonts/NotoColorEmoji.ttf.old`.
