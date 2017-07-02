@@ -17,7 +17,7 @@ List of flashable ZIPs
 | [GitHub](https://github.com/WeAreFairphone/flashable-zip_microG) | [Download](https://github.com/WeAreFairphone/flashable-zip_microG/releases/latest) |
 
 Install [microG](https://microg.org) or [UnifiedNlp](https://github.com/microg/android_packages_apps_UnifiedNlp/blob/master/README.md) into an Android system. Also includes an **OTA survival** `addon.d` script.  
-You'll usually install them normally, but some Android 7+ OSes and ROMs have not applied [required patches](https://github.com/microg/android_packages_apps_UnifiedNlp/tree/master/patches) yet, like LineageOS.
+You'll usually install them normally, but Google blocked userspace location providers in Android 7+, and some ROMs have not applied [required patches](https://github.com/microg/android_packages_apps_UnifiedNlp/tree/master/patches) yet, like LineageOS.
 
 **microG** is a free-as-in-freedom re-implementation of [Google’s proprietary Android user space apps and libraries](https://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/).  
 **Unified Network Location Provider** (UnifiedNlp) is a library that provides Wi-Fi- and Cell-tower-based geolocation [with configurable plugins](https://github.com/microg/android_packages_apps_UnifiedNlp#usage) to applications that use Google’s network location provider. It is included in GmsCore but can also run independently on most Android systems.
