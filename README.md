@@ -10,7 +10,7 @@ This previously used to be a repository that contained the source for these pack
 List of flashable ZIPs
 ---
 
-### microG Installer
+### microG/UnifiedNlp Installer
 
 | Repository | Latest release |
 | ---------- | -------------- |
