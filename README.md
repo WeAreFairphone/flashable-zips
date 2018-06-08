@@ -1,8 +1,8 @@
-Flashable ZIPs
+Index of Flashable ZIPs by the WeAreFairphone Community
 ===
 
-This is a list of community flashable ZIPs from the [Fairphone Community](https://forum.fairphone.com) for a variety of devices.  
-**Flashable ZIPs** are packages that can be flashed to Android devices, usually to extend the system. They need to be flashed by a custom recovery such as [TWRP](https://twrp.me/) or CWM Recovery.
+This is an index of community flashable ZIPs from the [Fairphone Community](https://fairphone.community) for a variety of devices.  
+**Flashable ZIPs** are packages that can be flashed to Android devices, usually to modify the software. They need to be flashed by a custom recovery such as [TWRP](https://twrp.me/) or CWM Recovery.
 
 This previously used to be a repository that contained the source for these packages, but each one has been moved to its respective repository.
 
@@ -39,7 +39,7 @@ Version 2 of EmojiOne is the last [open and free](https://github.com/Ranks/emoji
 | ---------- | -------------- |
 | [GitHub](https://github.com/WeAreFairphone/flashable-zip_unroot) | [Download](https://github.com/WeAreFairphone/flashable-zip_unroot/releases/latest) |
 
-Unroot Android. This was created originally as a clean way to unroot Fairphone 2 [Open OS](http://code.fairphone.com/projects/fp-osos/index.html#id2), that comes prerooted and with TWRP.
+Unroot Android. This was created originally as a clean way to unroot Fairphone 2 [Open OS](http://code.fairphone.com/projects/fp-osos/index.html#id2) 5.1, that came prerooted and with TWRP.
 
 Removes `bin/su` and `xbin/su` binaries from `/system`, and some other configuration files if they exist.
 Unrooting is needed to pass SafetyNet requirements for some apps. [Guide](https://forum.fairphone.com/t/pencil2-how-to-install-any-app-on-fp-open-os-for-beginners-and-experts/22516) and [motivation behind](https://forum.fairphone.com/t/how-to-be-able-to-install-and-use-any-app-on-fp-open-os-experimental/22327/34?u=roboe).
