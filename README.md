@@ -43,6 +43,14 @@ Replace Android [emoji set](https://www.google.com/get/noto/help/emoji/) with [E
 **EmojiOne v2** is an emoji set more comprehensible than Android's one [before Marshmallow](http://blog.emojipedia.org/android-6-0-1-emoji-changelog/).  
 Version 2 of EmojiOne is the last [open and free](https://github.com/Ranks/emojione/blob/2.2.7/LICENSE.md) version of EmojiOne. EmojiOne v3 and later are **not open** to the public anymore.
 
+### Fairphone 2 `modem.zip`
+
+| Repository | Latest release | Release history |
+| ---------- | -------------- | --------------- |
+| [GitHub](https://github.com/WeAreFairphone/modem_zip_generator) | [Direct download](https://io.pinterjann.is/public/misc/fairphone/modem/modem-latest.zip) | [Release history](https://github.com/WeAreFairphone/modem_zip_generator/releases/) |
+
+Update the proprietary firmware of your [Fairphone 2](https://shop.fairphone.com) to the latest available. Fairphone updates the software of the Fairphone 2 with [security patches](https://source.android.com/security/bulletin/) on a monthly basis.
+
 ### Unroot FP2 Open
 
 | Repository | Latest release |
