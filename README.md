@@ -22,6 +22,16 @@ You'll usually install them normally, but Google blocked userspace location prov
 **microG** is a free-as-in-freedom re-implementation of [Google’s proprietary Android user space apps and libraries](https://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/).  
 **Unified Network Location Provider** (UnifiedNlp) is a library that provides Wi-Fi- and Cell-tower-based geolocation [with configurable plugins](https://github.com/microg/android_packages_apps_UnifiedNlp#usage) to applications that use Google’s network location provider. It is included in GmsCore but can also run independently on most Android systems.
 
+### Noto Emoji Updater
+
+| Repository | Latest release |
+| ---------- | -------------- |
+| [GitHub](https://github.com/WeAreFairphone/flashable-zip_noto-emoji) | [Download](https://github.com/WeAreFairphone/flashable-zip_noto-emoji/releases/latest) |
+
+Update Android [emoji set](https://www.google.com/get/noto/help/emoji/) to the latest available, usually to the newest Android version. This also includes an OTA survival `addon.d` script and saves a copy of the previous installed emoji on your device at `/system/fonts/NotoColorEmoji.ttf.old`.
+
+**Noto Emoji** is the emoji set used by the Android system and it currently supports all emoji defined in the latest Unicode version (v10.0). Font is availabe under the [SIL Open Font License, version 1.1](https://github.com/googlei18n/noto-emoji/blob/master/fonts/LICENSE).
+
 ### EmojiOne v2 Installer
 
 | Repository | Latest release |
