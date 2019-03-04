@@ -45,9 +45,9 @@ Version 2 of EmojiOne is the last [open and free](https://github.com/Ranks/emoji
 
 ### Fairphone 2 `modem.zip`
 
-| Repository | Latest release | Release history |
-| ---------- | -------------- | --------------- |
-| [GitHub](https://github.com/WeAreFairphone/modem_zip_generator) | [Direct download](https://io.pinterjann.is/public/misc/fairphone/modem/modem-latest.zip) | [Release history](https://github.com/WeAreFairphone/modem_zip_generator/releases/) |
+| Repository | Latest release |
+| ---------- | -------------- |
+| [GitHub](https://github.com/WeAreFairphone/modem_zip_generator) | [Download](https://github.com/WeAreFairphone/modem_zip_generator/releases/latest) |
 
 Update the proprietary firmware of your [Fairphone 2](https://shop.fairphone.com) to the latest available. Fairphone updates the software of the Fairphone 2 with [security patches](https://source.android.com/security/bulletin/) on a monthly basis.
 
